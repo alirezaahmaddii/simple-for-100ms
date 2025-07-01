@@ -14,11 +14,6 @@ import { useEffect } from 'react'
 
 const loadingStates = [HMSRoomState.Connecting, HMSRoomState.Disconnecting]
 
-/*
- * Broadcaster code room nvv-pbdr-iyk
- * co-broadcaster code room fft-qxql-abk
- */
-
 export const Index = () => {
   const isConnected = useHMSStore(selectIsConnectedToRoom)
   const roomState = useHMSStore(selectRoomState)
