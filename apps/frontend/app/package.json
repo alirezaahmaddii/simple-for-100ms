@@ -1,0 +1,8 @@
+{
+  "name": "app",
+  "scripts": {
+    "clean": "rm -r node_modules && rm -r dist",
+    "dev": "max dev --watch",
+    "build": "max build"
+  }
+}

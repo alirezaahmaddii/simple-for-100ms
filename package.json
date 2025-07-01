@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -r node_modules && rm pnpm-lock.yaml && rm -r .umi",
+    "format": "eslint --fix .",
+    "lint": "eslint . && tsc --noEmit --project tsconfig.json",
+    "postinstall": "max setup",
+    "setup": "max setup"
+  },
+  "dependencies": {
+    "@100mslive/react-icons": "^0.10.35",
+    "@100mslive/react-sdk": "^0.10.35",
+    "@ant-design/cssinjs": "1.23.0",
+    "@ant-design/icons": "5.6.1",
+    "@ant-design/pro-components": "2.8.6",
+    "@emoji-mart/data": "^1.2.1",
+    "@emoji-mart/react": "^1.1.1",
+    "@umijs/max": "4.4.6",
+    "@yoopta/action-menu-list": "^4.9.4",
+    "@yoopta/blockquote": "^4.9.7",
+    "@yoopta/callout": "^4.9.4",
+    "@yoopta/code": "^4.9.4",
+    "@yoopta/divider": "^4.9.4",
+    "@yoopta/editor": "^4.9.4",
+    "@yoopta/exports": "^4.9.7",
+    "@yoopta/headings": "^4.9.4",
+    "@yoopta/link": "^4.9.4",
+    "@yoopta/link-tool": "^4.9.4",
+    "@yoopta/lists": "^4.9.4",
+    "@yoopta/marks": "^4.9.4",
+    "@yoopta/paragraph": "^4.9.4",
+    "@yoopta/toolbar": "^4.9.4",
+    "antd": "5.24.3",
+    "antd-style": "3.7.1",
+    "react-error-boundary": "5.0.0"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "3.1.0",
+    "@types/crypto-js": "^4.2.2",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.1",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "eslint": "8.57.1",
+    "eslint-plugin-react": "7.37.4",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "typescript": "5.1.6",
+    "vite": "6.2.2",
+    "vite-plugin-svgr": "4.3.0"
+  }
+}
