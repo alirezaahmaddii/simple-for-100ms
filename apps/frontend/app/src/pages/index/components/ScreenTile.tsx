@@ -18,7 +18,7 @@ export const ScreenTile = ({ peer }) => {
         {' '}
         {peer.name}
         {' '}
-        {peer.isLocal ? '(You)' : ''}
+        {peer.isLocal ? '(You)(Guest)' : ''}
       </div>
     </div>
   )

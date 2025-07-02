@@ -8,7 +8,6 @@ import {
   VideoOnIcon,
 } from '@100mslive/react-icons'
 import {
-  // SelectIsLocalAudioPluginPresent,
   selectIsLocalScreenShared,
   selectRoom,
   useAVToggle,

@@ -15,7 +15,7 @@ export const Peer = ({ peer }) => {
   const isPeerVideoEnabled = useHMSStore(selectIsPeerVideoEnabled(peer.id))
 
   return (
-    <div className="peer-container">
+    <div>
       {!isPeerAudioEnabled && (
         <div
           style={{
@@ -50,7 +50,7 @@ export const Peer = ({ peer }) => {
       <div className="peer-name">
         {peer.name}
         {' '}
-        {peer.isLocal ? '(You)' : ''}
+        {peer.isLocal ? '(You)(Host)' : ''}
       </div>
     </div>
   )

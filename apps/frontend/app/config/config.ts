@@ -1,8 +1,11 @@
 import { defineConfig } from '@umijs/max'
 import path from 'path'
+import { theme } from '../../uikit/src/theme'
 
 export default defineConfig({
-  antd: {},
+  antd: {
+    theme,
+  },
   model: {},
   initialState: {},
   request: {},

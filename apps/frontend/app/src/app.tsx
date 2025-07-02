@@ -1,16 +1,17 @@
+import { AppProvider, ErrorProvider, StyleProvider } from '@/apps/frontend/uikit/src/providers'
 import { HMSRoomProvider } from '@100mslive/react-sdk'
 import { RuntimeConfig } from '@umijs/max'
-import {App} from "antd";
-import {StyleProvider} from "antd-style";
 
 export const rootContainer: RuntimeConfig['rootContainer'] = (container) => {
   return (
+    <ErrorProvider>
       <StyleProvider>
-        <App>
+        <AppProvider>
           <HMSRoomProvider>
             {container}
           </HMSRoomProvider>
-        </App>
+        </AppProvider>
       </StyleProvider>
+    </ErrorProvider>
   )
 }

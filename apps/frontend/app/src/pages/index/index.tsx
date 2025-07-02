@@ -18,8 +18,6 @@ export const Index = () => {
   const isConnected = useHMSStore(selectIsConnectedToRoom)
   const roomState = useHMSStore(selectRoomState)
   const hmsActions = useHMSActions()
-  console.log(process.env.BROADCASTER_CODE_ROOM, 'BROADCASTER_CODE_ROOM')
-  console.log(process.env.COBROADCASTER_CODE_ROOM, 'COBROADCASTER_CODE_ROOM')
   useEffect(() => {
     window.onunload = () => {
       if (isConnected) {
